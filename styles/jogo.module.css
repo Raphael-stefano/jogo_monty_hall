@@ -1,0 +1,28 @@
+.jogo{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.portas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.botoes{
+    margin-top: 40px;
+}
+
+.botoes button{
+    background-color: #c0392c;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 2rem;
+}

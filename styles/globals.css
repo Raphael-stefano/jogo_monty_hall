@@ -1,0 +1,14 @@
+body{
+  background: #444;
+  color: #fff;
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --porta-largura: 200px;
+  --porta-altura: 310px
+}

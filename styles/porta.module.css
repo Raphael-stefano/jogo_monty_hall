@@ -1,0 +1,90 @@
+.area{
+    width: var(--porta-largura);
+    height: var(--porta-altura);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+}
+
+.estrutura{
+    display: flex;
+    flex-grow: 1;
+    border: 5px solid brown;
+    border-bottom: none;
+    width: 92.5%;
+}
+
+.porta{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: chocolate;
+    align-items: center;
+    padding: 15px;
+}
+
+.macaneta{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    align-self: flex-start;
+    position: absolute;
+    top: calc(0.5 * var(--porta-altura) - 10px);
+}
+
+.numero{
+    font-size: 3rem;
+    color: brown;
+}
+
+.chao{
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.selecionada .estrutura{
+    border: 5px solid gold;
+    border-bottom: none;
+}
+
+.selecionada .macaneta{
+    background-color: gold;
+}
+
+.selecionada .numero{
+    color: gold;
+}
+
+.aberta{
+    display: flex;
+    flex-grow: 1;
+    border: 5px solid brown;
+    border-bottom: none;
+    width: 92.5%;
+}
+
+.aberta .porta{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #0005;
+}
+
+.aberta .numero, .aberta .macaneta{
+    display: none;
+}
+
+.presenteVisivel{
+    position: absolute;
+    bottom: 10px;
+}
+
+.presenteOculto{
+    display: none;
+}
